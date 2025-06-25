@@ -1,0 +1,44 @@
+# Chess Bot Configuration
+bot:
+  name: "ChessLearningBot"
+  version: "1.0.0"
+  rating_limit: 1500
+  auto_accept_challenges: true
+  time_control: "600+5"  # 10 minutes + 5 seconds increment
+  
+stockfish:
+  path: "stockfish"
+  depth: 20
+  time_limit: 1.0
+  threads: 4
+  hash_size: 256
+  
+learning:
+  model_type: "neural_network"  # neural_network, random_forest, reinforcement
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 100
+  validation_split: 0.2
+  save_interval: 10
+  
+  # Reinforcement Learning
+  rl_algorithm: "PPO"  # PPO, A2C, DQN
+  exploration_rate: 0.1
+  discount_factor: 0.99
+  
+database:
+  path: "data/chess_bot.db"
+  backup_interval: 100  # games
+  
+logging:
+  level: "INFO"
+  file: "data/logs/bot.log"
+  max_size: "10MB"
+  backup_count: 5
+  
+analysis:
+  analyze_depth: 15
+  blunder_threshold: -200  # centipawns
+  mistake_threshold: -100
+  inaccuracy_threshold: -50
+
