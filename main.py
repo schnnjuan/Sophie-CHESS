@@ -14,11 +14,11 @@ from loguru import logger
 # Add src to path
 sys.path.append(str(Path(__file__).parent / "src"))
 
-from bot.chess_bot import ChessBot
-from database.db_manager import DatabaseManager
-from learning.model_manager import ModelManager
-from engine.stockfish_engine import StockfishEngine
-from analysis.game_analyzer import GameAnalyzer
+from src.bot.chess_bot import SophieBot
+from src.database.db_manager import DatabaseManager
+from src.learning.model_manager import ModelManager
+from src.engine.stockfish_engine import StockfishEngine
+from src.analysis.game_analyzer import GameAnalyzer
 
 
 class ChessLearningBot:
@@ -34,7 +34,8 @@ class ChessLearningBot:
         
     async def initialize(self):
         """Initialize all components of the bot."""
-        logger.info("🚀 Initializing Chess Learning Bot...")
+        from loguru import logger
+        logger.info("🚀 Initializing SophieBot...")
         
         try:
             # Initialize database
@@ -57,14 +58,14 @@ class ChessLearningBot:
             logger.info("✅ Model manager initialized")
             
             # Initialize chess bot
-            self.bot = ChessBot(
+            self.bot = SophieBot(
                 db_manager=self.db_manager,
                 model_manager=self.model_manager,
                 engine=self.engine,
                 analyzer=self.analyzer
             )
             await self.bot.initialize()
-            logger.info("✅ Chess bot initialized")
+            logger.info("✅ SophieBot initialized")
             
             logger.success("🎯 All components initialized successfully!")
             

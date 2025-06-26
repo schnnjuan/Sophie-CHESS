@@ -1,6 +1,6 @@
 # Chess Bot Configuration
 bot:
-  name: "ChessLearningBot"
+  name: "shopiebot"
   version: "1.0.0"
   rating_limit: 1500
   auto_accept_challenges: true
