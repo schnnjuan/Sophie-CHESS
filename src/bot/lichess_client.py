@@ -11,7 +11,7 @@ from typing import Optional, Dict, Any, List
 from loguru import logger
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv('.env.local')
 
 class LichessClient:
     """Client for interacting with Lichess API and playing games."""
@@ -52,22 +52,29 @@ class LichessClient:
         try:
             url = f"{self.base_url}/challenge/stockfish"
             payload = {
+                "level": 8,  # nível máximo do Stockfish
                 "clock.limit": time_limit,
                 "clock.increment": increment,
                 "color": color,
                 "rated": False  # bots não podem desafiar bots para partidas ranqueadas
             }
-            async with self.session.post(url, data=payload) as resp:
+            async with self.session.post(url, json=payload) as resp:
                 if resp.status == 200:
                     data = await resp.json()
                     challenge = data.get('challenge', {})
+                    # O campo 'color' pode não estar presente imediatamente
+                    color = challenge.get('color', color)
+                    game_id = challenge.get('id')
+                    if not game_id:
+                        logger.error(f"Desafio criado, mas não foi possível obter o id do desafio: {challenge}")
+                        return None
                     return {
-                        'game_id': challenge.get('id'),
+                        'game_id': game_id,
                         'opponent': 'stockfish',
-                        'color': challenge.get('color'),
+                        'color': color,
                         'time_control': f"{time_limit//60}+{increment}",
-                        'white_player': self.username if challenge.get('color') == 'white' else 'stockfish',
-                        'black_player': 'stockfish' if challenge.get('color') == 'white' else self.username
+                        'white_player': self.username if color == 'white' else 'stockfish',
+                        'black_player': 'stockfish' if color == 'white' else self.username
                     }
                 else:
                     logger.error(f"Erro ao desafiar Stockfish: status {resp.status}")
