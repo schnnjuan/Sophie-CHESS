@@ -58,6 +58,7 @@ class SophieBot:
                 game_info = await self.client.find_game()
                 if game_info:
                     await self.play_game(game_info)
+                    logger.info("🔄 Partida finalizada. Buscando nova partida...")
                 else:
                     # Wait before looking for another game
                     await asyncio.sleep(10)
