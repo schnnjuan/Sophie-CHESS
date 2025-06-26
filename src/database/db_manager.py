@@ -73,12 +73,27 @@ class DatabaseManager:
                 FROM games
             ''')
             row = await cursor.fetchone()
-            return {
-                'games_played': row['games_played'],
-                'wins': row['wins'],
-                'losses': row['losses'],
-                'draws': row['draws'],
-            }
+            # Garante que row não é None e converte para int
+            if row is None:
+                return {'games_played': 0, 'wins': 0, 'losses': 0, 'draws': 0}
+            def safe_int(val):
+                return int(val) if val is not None else 0
+            # Suporte para acesso por índice e por chave
+            if isinstance(row, dict):
+                return {
+                    'games_played': safe_int(row.get('games_played')),
+                    'wins': safe_int(row.get('wins')),
+                    'losses': safe_int(row.get('losses')),
+                    'draws': safe_int(row.get('draws')),
+                }
+            else:
+                # Caso row seja uma tupla
+                return {
+                    'games_played': safe_int(row[0]),
+                    'wins': safe_int(row[1]),
+                    'losses': safe_int(row[2]),
+                    'draws': safe_int(row[3]),
+                }
     
     async def close(self):
         """Close the database connection."""

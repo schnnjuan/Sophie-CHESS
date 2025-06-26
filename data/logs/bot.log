@@ -1,20 +1,38 @@
-2025-06-26 01:45:34 | INFO | __main__:main:126 | 🤖 Chess Learning Bot v1.0.0
-2025-06-26 01:45:34 | INFO | __main__:main:127 | ==================================================
-2025-06-26 01:45:34 | INFO | __main__:initialize:38 | 🚀 Initializing SophieBot...
-2025-06-26 01:45:34 | INFO | src.database.db_manager:initialize:21 | Initializing database...
-2025-06-26 01:45:34 | INFO | src.database.db_manager:_create_tables:43 | ✅ Database tables ready
-2025-06-26 01:45:34 | INFO | __main__:initialize:44 | ✅ Database initialized
-2025-06-26 01:45:34 | INFO | src.engine.stockfish_engine:initialize:25 | Initializing Stockfish at path: stockfish
-2025-06-26 01:45:34 | ERROR | src.engine.stockfish_engine:initialize:30 | Failed to initialize Stockfish engine: [WinError 2] O sistema não pode encontrar o arquivo especificado
-2025-06-26 01:45:34 | ERROR | __main__:initialize:73 | ❌ Initialization failed: [WinError 2] O sistema não pode encontrar o arquivo especificado
-2025-06-26 01:45:34 | ERROR | __main__:main:137 | ❌ Fatal error: [WinError 2] O sistema não pode encontrar o arquivo especificado
-2025-06-26 01:47:13 | INFO | __main__:main:126 | 🤖 Chess Learning Bot v1.0.0
-2025-06-26 01:47:13 | INFO | __main__:main:127 | ==================================================
-2025-06-26 01:47:13 | INFO | __main__:initialize:38 | 🚀 Initializing SophieBot...
-2025-06-26 01:47:13 | INFO | src.database.db_manager:initialize:21 | Initializing database...
-2025-06-26 01:47:13 | INFO | src.database.db_manager:_create_tables:43 | ✅ Database tables ready
-2025-06-26 01:47:13 | INFO | __main__:initialize:44 | ✅ Database initialized
-2025-06-26 01:47:13 | INFO | src.engine.stockfish_engine:initialize:25 | Initializing Stockfish at path: stockfish
-2025-06-26 01:47:13 | ERROR | src.engine.stockfish_engine:initialize:30 | Failed to initialize Stockfish engine: [WinError 2] O sistema não pode encontrar o arquivo especificado
-2025-06-26 01:47:13 | ERROR | __main__:initialize:73 | ❌ Initialization failed: [WinError 2] O sistema não pode encontrar o arquivo especificado
-2025-06-26 01:47:13 | ERROR | __main__:main:137 | ❌ Fatal error: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-06-26 01:55:41 | INFO | __main__:main:126 | 🤖 Chess Learning Bot v1.0.0
+2025-06-26 01:55:41 | INFO | __main__:main:127 | ==================================================
+2025-06-26 01:55:41 | INFO | __main__:initialize:38 | 🚀 Initializing SophieBot...
+2025-06-26 01:55:41 | INFO | src.database.db_manager:initialize:21 | Initializing database...
+2025-06-26 01:55:41 | INFO | src.database.db_manager:_create_tables:43 | ✅ Database tables ready
+2025-06-26 01:55:41 | INFO | __main__:initialize:44 | ✅ Database initialized
+2025-06-26 01:55:41 | INFO | src.engine.stockfish_engine:initialize:25 | Initializing Stockfish at path: stockfish
+2025-06-26 01:55:41 | ERROR | src.engine.stockfish_engine:initialize:30 | Failed to initialize Stockfish engine: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-06-26 01:55:41 | ERROR | __main__:initialize:73 | ❌ Initialization failed: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-06-26 01:55:41 | ERROR | __main__:main:137 | ❌ Fatal error: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-06-26 01:57:51 | INFO | __main__:main:126 | 🤖 Chess Learning Bot v1.0.0
+2025-06-26 01:57:51 | INFO | __main__:main:127 | ==================================================
+2025-06-26 01:57:51 | INFO | __main__:initialize:38 | 🚀 Initializing SophieBot...
+2025-06-26 01:57:51 | INFO | src.database.db_manager:initialize:21 | Initializing database...
+2025-06-26 01:57:51 | INFO | src.database.db_manager:_create_tables:43 | ✅ Database tables ready
+2025-06-26 01:57:51 | INFO | __main__:initialize:44 | ✅ Database initialized
+2025-06-26 01:57:51 | INFO | src.engine.stockfish_engine:initialize:25 | Initializing Stockfish at path: stockfish
+2025-06-26 01:57:51 | ERROR | src.engine.stockfish_engine:initialize:30 | Failed to initialize Stockfish engine: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-06-26 01:57:51 | ERROR | __main__:initialize:73 | ❌ Initialization failed: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-06-26 01:57:51 | ERROR | __main__:main:137 | ❌ Fatal error: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-06-26 02:00:54 | INFO | __main__:main:123 | 🤖 Chess Learning Bot v1.0.0
+2025-06-26 02:00:54 | INFO | __main__:main:124 | ==================================================
+2025-06-26 02:00:54 | INFO | __main__:initialize:35 | 🚀 Initializing SophieBot...
+2025-06-26 02:00:54 | INFO | src.database.db_manager:initialize:21 | Initializing database...
+2025-06-26 02:00:54 | INFO | src.database.db_manager:_create_tables:43 | ✅ Database tables ready
+2025-06-26 02:00:54 | INFO | __main__:initialize:41 | ✅ Database initialized
+2025-06-26 02:00:54 | INFO | src.engine.stockfish_engine:initialize:25 | Initializing Stockfish at path: src/stockfish/stockfish-windows-x86-64-avx2/stockfish/stockfish-windows-x86-64-avx2.exe
+2025-06-26 02:00:55 | INFO | src.engine.stockfish_engine:initialize:28 | Stockfish engine initialized
+2025-06-26 02:00:55 | INFO | __main__:initialize:46 | ✅ Stockfish engine initialized
+2025-06-26 02:00:55 | INFO | __main__:initialize:50 | ✅ Game analyzer initialized
+2025-06-26 02:00:55 | INFO | src.learning.model_manager:initialize:36 | Initializing model manager...
+2025-06-26 02:00:55 | WARNING | src.learning.model_manager:initialize:47 | PyTorch not available, model predictions disabled
+2025-06-26 02:00:55 | INFO | __main__:initialize:55 | ✅ Model manager initialized
+2025-06-26 02:00:55 | INFO | src.bot.chess_bot:initialize:40 | Initializing SophieBot...
+2025-06-26 02:00:55 | INFO | src.bot.lichess_client:initialize:27 | Initializing Lichess client...
+2025-06-26 02:00:55 | INFO | src.bot.lichess_client:initialize:38 | Lichess client initialized for user: sophiebot
+2025-06-26 02:00:55 | ERROR | __main__:initialize:70 | ❌ Initialization failed: tuple indices must be integers or slices, not str
+2025-06-26 02:00:55 | ERROR | __main__:main:134 | ❌ Fatal error: tuple indices must be integers or slices, not str

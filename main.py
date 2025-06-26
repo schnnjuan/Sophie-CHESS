@@ -1,18 +1,15 @@
-#!/usr/bin/env python3
-"""
-Chess Learning Bot - Main Entry Point
-
-Um bot de xadrez inteligente que joga no Chess.com e aprende com cada partida.
-"""
-
 import asyncio
 import sys
 import signal
 from pathlib import Path
 from loguru import logger
+from dotenv import load_dotenv
 
 # Add src to path
 sys.path.append(str(Path(__file__).parent / "src"))
+
+# Load environment variables from .env.local
+load_dotenv(dotenv_path=".env.local")
 
 from src.bot.chess_bot import SophieBot
 from src.database.db_manager import DatabaseManager

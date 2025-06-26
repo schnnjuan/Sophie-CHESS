@@ -8,6 +8,8 @@ Provides a web dashboard to monitor the bot's performance and statistics.
 import asyncio
 import sys
 from pathlib import Path
+sys.path.append(str(Path(__file__).parent / "src"))
+
 import json
 from datetime import datetime, timedelta
 from loguru import logger
@@ -17,10 +19,7 @@ import pandas as pd
 from flask import Flask, render_template, jsonify
 from threading import Thread
 
-# Add src to path
-sys.path.append(str(Path(__file__).parent / "src"))
-
-from database.db_manager import DatabaseManager
+from src.database.db_manager import DatabaseManager
 
 app = Flask(__name__)
 db_manager = None

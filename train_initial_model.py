@@ -16,9 +16,9 @@ import random
 # Add src to path
 sys.path.append(str(Path(__file__).parent / "src"))
 
-from learning.neural_network import ChessNet, PositionEncoder, ChessTrainer
-from database.db_manager import DatabaseManager
-from engine.stockfish_engine import StockfishEngine
+from src.learning.neural_network import ChessNet, PositionEncoder, ChessTrainer
+from src.database.db_manager import DatabaseManager
+from src.engine.stockfish_engine import StockfishEngine
 
 
 class InitialTrainer:
