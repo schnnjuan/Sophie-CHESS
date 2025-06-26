@@ -1,0 +1,20 @@
+2025-06-26 01:45:34 | INFO | __main__:main:126 | 🤖 Chess Learning Bot v1.0.0
+2025-06-26 01:45:34 | INFO | __main__:main:127 | ==================================================
+2025-06-26 01:45:34 | INFO | __main__:initialize:38 | 🚀 Initializing SophieBot...
+2025-06-26 01:45:34 | INFO | src.database.db_manager:initialize:21 | Initializing database...
+2025-06-26 01:45:34 | INFO | src.database.db_manager:_create_tables:43 | ✅ Database tables ready
+2025-06-26 01:45:34 | INFO | __main__:initialize:44 | ✅ Database initialized
+2025-06-26 01:45:34 | INFO | src.engine.stockfish_engine:initialize:25 | Initializing Stockfish at path: stockfish
+2025-06-26 01:45:34 | ERROR | src.engine.stockfish_engine:initialize:30 | Failed to initialize Stockfish engine: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-06-26 01:45:34 | ERROR | __main__:initialize:73 | ❌ Initialization failed: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-06-26 01:45:34 | ERROR | __main__:main:137 | ❌ Fatal error: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-06-26 01:47:13 | INFO | __main__:main:126 | 🤖 Chess Learning Bot v1.0.0
+2025-06-26 01:47:13 | INFO | __main__:main:127 | ==================================================
+2025-06-26 01:47:13 | INFO | __main__:initialize:38 | 🚀 Initializing SophieBot...
+2025-06-26 01:47:13 | INFO | src.database.db_manager:initialize:21 | Initializing database...
+2025-06-26 01:47:13 | INFO | src.database.db_manager:_create_tables:43 | ✅ Database tables ready
+2025-06-26 01:47:13 | INFO | __main__:initialize:44 | ✅ Database initialized
+2025-06-26 01:47:13 | INFO | src.engine.stockfish_engine:initialize:25 | Initializing Stockfish at path: stockfish
+2025-06-26 01:47:13 | ERROR | src.engine.stockfish_engine:initialize:30 | Failed to initialize Stockfish engine: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-06-26 01:47:13 | ERROR | __main__:initialize:73 | ❌ Initialization failed: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2025-06-26 01:47:13 | ERROR | __main__:main:137 | ❌ Fatal error: [WinError 2] O sistema não pode encontrar o arquivo especificado
