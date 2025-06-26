@@ -36,3 +36,27 @@
 2025-06-26 02:00:55 | INFO | src.bot.lichess_client:initialize:38 | Lichess client initialized for user: sophiebot
 2025-06-26 02:00:55 | ERROR | __main__:initialize:70 | ❌ Initialization failed: tuple indices must be integers or slices, not str
 2025-06-26 02:00:55 | ERROR | __main__:main:134 | ❌ Fatal error: tuple indices must be integers or slices, not str
+2025-06-26 02:10:57 | INFO | __main__:main:123 | 🤖 Chess Learning Bot v1.0.0
+2025-06-26 02:10:57 | INFO | __main__:main:124 | ==================================================
+2025-06-26 02:10:57 | INFO | __main__:initialize:35 | 🚀 Initializing SophieBot...
+2025-06-26 02:10:57 | INFO | src.database.db_manager:initialize:21 | Initializing database...
+2025-06-26 02:10:57 | INFO | src.database.db_manager:_create_tables:43 | ✅ Database tables ready
+2025-06-26 02:10:57 | INFO | __main__:initialize:41 | ✅ Database initialized
+2025-06-26 02:10:57 | INFO | src.engine.stockfish_engine:initialize:25 | Initializing Stockfish at path: src/stockfish/stockfish-windows-x86-64-avx2/stockfish/stockfish-windows-x86-64-avx2.exe
+2025-06-26 02:10:58 | INFO | src.engine.stockfish_engine:initialize:28 | Stockfish engine initialized
+2025-06-26 02:10:58 | INFO | __main__:initialize:46 | ✅ Stockfish engine initialized
+2025-06-26 02:10:58 | INFO | __main__:initialize:50 | ✅ Game analyzer initialized
+2025-06-26 02:10:58 | INFO | src.learning.model_manager:initialize:36 | Initializing model manager...
+2025-06-26 02:10:58 | INFO | src.learning.model_manager:initialize:45 | No existing model found, will use engine fallback
+2025-06-26 02:10:58 | INFO | __main__:initialize:55 | ✅ Model manager initialized
+2025-06-26 02:10:58 | INFO | src.bot.chess_bot:initialize:40 | Initializing SophieBot...
+2025-06-26 02:10:58 | INFO | src.bot.lichess_client:initialize:27 | Initializing Lichess client...
+2025-06-26 02:10:58 | INFO | src.bot.lichess_client:initialize:38 | Lichess client initialized for user: sophiebot
+2025-06-26 02:10:59 | INFO | src.bot.chess_bot:initialize:49 | Bot initialized - Games: 0, Win rate: 0.0%
+2025-06-26 02:10:59 | INFO | __main__:initialize:65 | ✅ SophieBot initialized
+2025-06-26 02:10:59 | SUCCESS | __main__:initialize:67 | 🎯 All components initialized successfully!
+2025-06-26 02:10:59 | INFO | __main__:start:76 | 🎮 Starting Chess Learning Bot...
+2025-06-26 02:10:59 | INFO | src.bot.chess_bot:start_playing:53 | 🎯 Starting to play chess...
+2025-06-26 02:10:59 | INFO | src.bot.chess_bot:play_game:75 | 🎮 Starting game game_1 vs TestOpponent as white
+2025-06-26 02:10:59 | ERROR | src.engine.stockfish_engine:get_best_move:39 | Error getting best move: 'tuple' object has no attribute 'play'
+2025-06-26 02:10:59 | ERROR | src.bot.chess_bot:play_game:146 | Error during game game_1: 'NoneType' object has no attribute 'from_square'

@@ -34,7 +34,12 @@ class StockfishEngine:
         """Get the best move for a given chess position."""
         try:
             result = await self.engine.play(board, chess.engine.Limit(time=time_limit))
-            return result.move
+            # Garante que retorna apenas o objeto chess.Move
+            if hasattr(result, 'move') and result.move is not None:
+                return result.move
+            else:
+                logger.error(f"Stockfish did not return a valid move: {result}")
+                return None
         except Exception as e:
             logger.error(f"Error getting best move: {e}")
             return None

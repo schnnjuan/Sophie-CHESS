@@ -164,9 +164,14 @@ class SophieBot:
             
             # Fallback to engine move
             engine_move = await self.engine.get_best_move(board, time_limit=1.0)
-            logger.debug(f"Using engine move: {engine_move}")
-            return engine_move
-            
+            if engine_move is not None:
+                logger.debug(f"Using engine move: {engine_move}")
+                return engine_move
+            else:
+                logger.error("Engine did not return a valid move. Choosing random legal move.")
+                import random
+                return random.choice(list(board.legal_moves))
+        
         except Exception as e:
             logger.error(f"Error getting best move: {e}")
             # Last resort - random legal move
