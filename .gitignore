@@ -1,0 +1,41 @@
+# Ignore Python virtual environments
+.venv/
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore environment/config files
+.env
+.env.*
+.env.local
+
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore node_modules (caso use Node.js)
+node_modules/
+
+# Ignore frontend build output
+.next/
+
+# Ignore data except /data folder
+!data/
+
+# Ignore everything else
+*
+!data/
+!/.gitignore
